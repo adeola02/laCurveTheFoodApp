@@ -1,0 +1,35 @@
+.vendors-holder{
+    width: 100%;
+    /* min-height: 70vh; */
+    height: auto;
+    background:#2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.vendors-wrapper{
+    width: 85%;
+    height: auto;
+    min-height: 70vh;
+    background: #2e2e2e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vendors-cards{
+    margin-top: 10px;
+    width: 18rem;
+    height: 20rem;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+}
+.vendor-img{
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border-radius: 50%;
+}

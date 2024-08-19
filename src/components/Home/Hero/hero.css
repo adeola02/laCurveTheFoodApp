@@ -1,0 +1,49 @@
+.hero-holder{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.hero-wrapper{
+    background-color: #2e2e2e;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-right{
+    width: 50%;
+    height: 100%;
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfufClwkvvX8q7mPoNUAE7TjxLlZj-7esRiaRGddYsSDIRtxwCmFGrGN5bSrH9jrGU0ek&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-left{
+    width: 40%;
+    height: 100%;
+
+    & h2{
+        color: white;
+        font-size: 60px;
+    }
+}
+.hero-left > div {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+
+    & button{
+        width: 7rem;
+        height: 3rem;
+        border-radius: 30px;
+        border: none;
+        background: white;
+    }
+
+    & .active-btn{
+        background: red;
+    }
+}

@@ -1,0 +1,9 @@
+.Body{
+    width: 90vw;
+    min-height: 85vh;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: #2e2e2e;
+    /* justify-content: space-between; */
+}
