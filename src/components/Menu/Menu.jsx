@@ -3,6 +3,7 @@ import "./Menu.css";
 import MenuCards from "./MenuCards";
 import { useParams } from "react-router-dom";
 import data from "../../food.json";
+import Header from "../Home/Header/Header";
 
 const Menu = () => {
   const { vendorId } = useParams();
@@ -18,6 +19,8 @@ const Menu = () => {
   // console.log(array.map((e)=>e.id))
 
   return (
+    <>
+    <Header/>
     <div className="menu-holder">
       <div className="menu-wrapper">
         {menuArray.map((item) => (
@@ -25,6 +28,7 @@ const Menu = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate, Outlet } from 'react-router-dom';
 import Header from '../components/Home/Header/Header';
+import Home from "../components/Home/Home"
 
 const Buyers = () => {
     const isLoggedIn=useSelector((state)=>state.cart.loginIn.isLoggedIn)
@@ -12,7 +13,7 @@ const Buyers = () => {
     <>
     {
         isLoggedIn?<div className='Body'>
-            <Header/>
+            {/* <Header/> */}
             <Outlet/>
         </div>:<Navigate to="/" replace={true}/>
     }

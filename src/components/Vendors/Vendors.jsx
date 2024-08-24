@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Vendors.css";
 import { NavLink, useParams } from "react-router-dom";
 import data from "../../food.json";
+import Header from "../Home/Header/Header";
 const Vendors = () => {
   const datas = [
     {
@@ -53,16 +54,25 @@ const Vendors = () => {
   
 
   return (
+    <>
+    <Header/>
     <div className="vendors-holder">
       <div className="vendors-wrapper">
         {vendors?.map((item, index) => (
           <div className="vendors-cards" key={index}>
-            <div className="vendor-img"></div>
-            <NavLink to={`/lami/menu/${item}`}>{item}</NavLink>
+            <div className="vendor-img">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqNNWx6mHXIVtL480D7Gd-bcSaufI5300nQ&s"
+            alt=""
+            id="img"
+          />
+            </div>
+            <NavLink to={`/lami/buyer/menu/${item}`}>{item}</NavLink>
           </div>
         ))}
       </div>
     </div>
+    </>
   );
 };
 

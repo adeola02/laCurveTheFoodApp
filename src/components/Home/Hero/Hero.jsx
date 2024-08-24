@@ -1,8 +1,11 @@
 import React from 'react';
 import "./hero.css"
+import Header from '../Header/Header';
 
 const Hero = () => {
   return (
+    <>
+      <Header/>
     <div className='hero-holder'>
         <div className='hero-wrapper'>
           <div className='hero-left'>
@@ -20,6 +23,8 @@ const Hero = () => {
           </div>
         </div>
     </div>
+    </>
+    
   )
 }
 
